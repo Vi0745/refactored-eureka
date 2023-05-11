@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)file:///D:/Notepad++/22222.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Таблица с проверкой ответов</title>
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			border: 10px solid black;
+			padding: 30px;
+			text-align: center;
+			background-color: purple;
+		}
+		input[type="text"] {
+			width: 90%;
+			margin-bottom: 20px;
+			background-color: yellow;
+		}	
+				body {
+			background-image: url('Images/lll.jpg');
+			background-size: cover;
+		}
+	</style>
+	<script>
+		function checkAnswer(questionNumber) {
+			var answer = document.getElementsByName("answer" + questionNumber)[0].value;
+			var resultElement = document.getElementById("result" + questionNumber);
+
+			if (questionNumber === 1) {
+				if (answer === "4") {
+					resultElement.innerHTML = "It's correct!";
+					resultElement.style.color = "#16F529";
+				} else {
+					resultElement.innerHTML = "This isn't correct, please try again";
+					resultElement.style.color = "red";
+				}
+			}
+
+			if (questionNumber === 2) {
+				if (answer === "8") {
+					resultElement.innerHTML = "It's correct!";
+					resultElement.style.color = "#16F529";
+				} else {
+					resultElement.innerHTML = "This isn't correct, please try again";
+					resultElement.style.color = "red";
+				}
+			}
+
+			if (questionNumber === 3) {
+				if (answer === "12") {
+					resultElement.innerHTML = "It's correct!";
+					resultElement.style.color = "#16F529";
+				} else {
+					resultElement.innerHTML = "This isn't correct, please try again";
+					resultElement.style.color = "red";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<table>
+  <tbody><tr>
+    <td>
+      <form>
+        <label>Question 1:</label><br>
+        <input type="text" name="answer1"><br>
+        <button type="button" onclick="checkAnswer(1)">Check</button>
+        <div id="result1"></div>
+      </form>
+    </td>
+    <td>
+      <form>
+        <label>Question 2:</label><br>
+        <input type="text" name="answer2"><br>
+        <button type="button" onclick="checkAnswer(2)">Check</button>
+        <div id="result2"></div>
+      </form>
+    </td>
+    <td>
+      <form>
+        <label>Question 3:</label><br>
+        <input type="text" name="answer3"><br>
+        <button type="button" onclick="checkAnswer(3)">Check</button>
+        <div id="result3"></div>
+      </form>
+    </td>
+	</tr>
+  <tr>
+    <td>
+      <form>
+        <label>Question 4:</label><br>
+        <input type="text" name="answer4"><br>
+        <button type="button" onclick="checkAnswer(4)">Check</button>
+        <div id="result4"></div>
+      </form>
+    </td>
+    <td>
+      <form>
+        <label>Question 5:</label><br>
+        <input type="text" name="answer5"><br>
+        <button type="button" onclick="checkAnswer(5)">Check</button>
+        <div id="result5"></div>
+      </form>
+    </td>
+    <td>
+      <form>
+        <label>Question 6:</label><br>
+        <input type="text" name="answer6"><br>
+        <button type="button" onclick="checkAnswer(6)">Check</button>
+        <div id="result6"></div>
+      </form>
+    </td>
+	</tr>
+  <tr>
+    <td>
+      <form>
+        <label>Question 7:</label><br>
+        <input type="text" name="answer7"><br>
+        <button type="button" onclick="checkAnswer(7)">Check</button>
+        <div id="result7"></div>
+      </form>
+    </td>
+	<td>
+      <form>
+        <label>Question 8:</label><br>
+        <input type="text" name="answer8"><br>
+        <button type="button" onclick="checkAnswer(8)">Check</button>
+        <div id="result8"></div>
+      </form>
+    </td>
+	<td>
+      <form>
+        <label>Question 9:</label><br>
+        <input type="text" name="answer9"><br>
+        <button type="button" onclick="checkAnswer(9)">Check</button>
+        <div id="result9"></div>
+      </form>
+    </td>
+  </tr>
+  </tbody></table>
+
+</body></html>
